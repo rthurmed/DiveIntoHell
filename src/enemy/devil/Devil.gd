@@ -15,16 +15,12 @@ onready var animation = $AnimationPlayer
 
 # TODO: Enemy base class with common functions
 # TODO: arrow mechanics
+# TODO: sprite that look more 'topdown-ish'
 
 
 func aim_to_target(delta, speed = AIM_SPEED, offset = AIM_OFFSET):
-	# aim
 	var angle = upper_vi.global_position.angle_to_point(target.global_position + offset)
 	upper_vi.rotation = lerp_angle(upper_vi.rotation, angle, delta * speed)
-	# flip
-	# FIXME: breaking the aiming
-	var flipped = global_position.x > target.global_position.x
-	visual_instance.scale.x = 1 if flipped else -1
 
 
 func _on_StateMachine_transition(state_name):
