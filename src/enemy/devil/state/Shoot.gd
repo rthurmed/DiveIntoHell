@@ -11,6 +11,7 @@ func enter():
 	owner.aim_visual.visible = false
 	
 	var instance = shoot()
+	owner.emit_signal('shoot')
 	owner.target = instance # focus on the arrow before aiming again
 	owner.animation.play('RESET')
 	

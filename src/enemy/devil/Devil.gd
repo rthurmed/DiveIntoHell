@@ -15,6 +15,9 @@ onready var animation = $AnimationPlayer
 onready var aim_raycast = $VisualInstance/Upper/AimRayCast
 onready var aim_visual = $VisualInstance/Upper/AimRayCast/VisualRay
 
+# warning-ignore:unused_signal
+signal shoot
+
 # TODO: Enemy base class with common functions
 
 
