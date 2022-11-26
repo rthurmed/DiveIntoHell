@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/ui-life.png" type="Texture" id=1]
+[ext_resource path="res://src/ui/LifeIndicator.gd" type="Script" id=2]
+
+[node name="LifeIndicator" type="Control"]
+margin_right = 15.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 15, 15 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 8, 8 )
+texture = ExtResource( 1 )
+hframes = 2
