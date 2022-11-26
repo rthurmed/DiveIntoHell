@@ -19,3 +19,9 @@ func _process(delta):
 	
 	movement = lerp(movement, movement_input, delta * MOVEMENT_ACCEL)
 	var _slide = move_and_slide(movement * MOVEMENT_SPEED)
+
+
+func damage():
+	# TODO
+	print_debug('NOT IMPLEMENTED YET')
+	pass

@@ -8,6 +8,7 @@
 [node name="Main" type="YSort"]
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -200
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 32, 32 )
 format = 1
@@ -15,10 +16,12 @@ tile_data = PoolIntArray( 0, 2, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 
 
 [node name="DoorEnter" parent="." instance=ExtResource( 2 )]
 position = Vector2( 63, 32 )
+z_index = -200
 
 [node name="DoorExit" parent="." instance=ExtResource( 2 )]
 position = Vector2( 130, 192 )
 rotation = -3.14159
+z_index = -200
 opened = true
 
 [node name="Player" parent="." instance=ExtResource( 3 )]

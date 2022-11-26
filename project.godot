@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Area2D",
+"base": "KinematicBody2D",
 "class": "Devil",
 "language": "GDScript",
 "path": "res://src/enemy/devil/Devil.gd"
@@ -110,6 +110,7 @@ player_dash={
 2d_physics/layer_1="world"
 2d_physics/layer_2="player"
 2d_physics/layer_3="enemy"
+2d_physics/layer_4="arrow"
 
 [physics]
 
