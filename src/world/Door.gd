@@ -1,8 +1,8 @@
 extends Node2D
 
 
-const OFFSET_X_CLOSED = 0
-const OFFSET_X_OPENED = 64
+const FRAME_CLOSED = 0
+const FRAME_OPENED = 1
 
 export var opened = false
 
@@ -15,7 +15,7 @@ func _ready():
 
 func set_opened(value: bool):
 	opened = value
-	sprite.region_rect.position.x = OFFSET_X_OPENED if value else OFFSET_X_CLOSED
+	sprite.frame = FRAME_OPENED if value else FRAME_CLOSED
 
 
 

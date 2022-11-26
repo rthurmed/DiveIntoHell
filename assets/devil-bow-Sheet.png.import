@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/devil-legs.png-71ae8433cb04ccdc69fb632f05739e1a.stex"
+path="res://.import/devil-bow-Sheet.png-0cbb8505fb6ad1d89e37410da4249416.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/devil-legs.png"
-dest_files=[ "res://.import/devil-legs.png-71ae8433cb04ccdc69fb632f05739e1a.stex" ]
+source_file="res://assets/devil-bow-Sheet.png"
+dest_files=[ "res://.import/devil-bow-Sheet.png-0cbb8505fb6ad1d89e37410da4249416.stex" ]
 
 [params]
 
