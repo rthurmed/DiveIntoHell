@@ -10,7 +10,10 @@ func process(delta: float):
 
 
 func physics_process(_delta: float):
-	if aim_raycast.is_colliding():
+	if (
+		aim_raycast.is_colliding() and
+		aim_raycast.get_collider().name == owner.target.name
+	):
 		transition('Shoot')
 
 
