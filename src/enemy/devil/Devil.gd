@@ -14,6 +14,7 @@ onready var upper_vi = $VisualInstance/Upper
 onready var animation = $AnimationPlayer
 onready var aim_raycast = $VisualInstance/Upper/AimRayCast
 onready var aim_visual = $VisualInstance/Upper/AimRayCast/VisualRay
+onready var state_machine = $StateMachine
 
 # warning-ignore:unused_signal
 signal shoot
@@ -35,5 +36,4 @@ func update_visual_aim():
 
 
 func damage():
-	# TODO: death animation
-	queue_free()
+	state_machine.transition('Death')

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Jingle_Lose_00.wav-ccdda09f9d5ef2579560f57ca5701de6.sample"
+
+[deps]
+
+source_file="res://assets/sfx/little-robot-sound-factory/Horror Sound Library/Jingle_Lose_00.wav"
+dest_files=[ "res://.import/Jingle_Lose_00.wav-ccdda09f9d5ef2579560f57ca5701de6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

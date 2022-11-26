@@ -6,6 +6,8 @@ export var speed_reflect_mutator = 1.15
 export var speed_mutation_min = 40
 export var speed_mutation_max = 300
 
+onready var sound_reflect = $Sound/Reflect
+
 
 func _physics_process(delta):
 	var movement = Vector2.LEFT.rotated(rotation) * speed
@@ -34,6 +36,7 @@ func reflect(normal):
 	rotation = Vector2.LEFT.rotated(rotation).reflect(normal).angle()
 	speed = speed * speed_reflect_mutator
 	speed = clamp(speed, speed_mutation_min, speed_mutation_max)
+	sound_reflect.play()
 
 
 func _on_Timer_timeout():

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Scream_Male_01__Fairy.wav-04a21aa733c4c57c3c876cf1d8e556ac.sample"
+
+[deps]
+
+source_file="res://assets/sfx/little-robot-sound-factory/Horror Sound Library/Scream_Male_01__Fairy.wav"
+dest_files=[ "res://.import/Scream_Male_01__Fairy.wav-04a21aa733c4c57c3c876cf1d8e556ac.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
