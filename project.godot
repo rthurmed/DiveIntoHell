@@ -8,6 +8,28 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Devil",
+"language": "GDScript",
+"path": "res://src/enemy/devil/Devil.gd"
+}, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://modules/StateMachine/State.gd"
+}, {
+"base": "Node",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://modules/StateMachine/StateMachine.gd"
+} ]
+_global_script_class_icons={
+"Devil": "",
+"State": "",
+"StateMachine": ""
+}
+
 [application]
 
 config/name="DiveIntoHell"
@@ -82,6 +104,12 @@ player_dash={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_physics/layer_2="player"
+2d_physics/layer_3="enemy"
 
 [physics]
 
