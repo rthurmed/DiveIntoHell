@@ -11,6 +11,7 @@ func process(delta: float):
 
 
 func enter():
+	owner.aim_visual.visible = false
 	timer.start()
 	pass
 

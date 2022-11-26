@@ -12,6 +12,8 @@ onready var target = get_node_or_null(path_target)
 onready var visual_instance = $VisualInstance
 onready var upper_vi = $VisualInstance/Upper
 onready var animation = $AnimationPlayer
+onready var aim_raycast = $VisualInstance/Upper/AimRayCast
+onready var aim_visual = $VisualInstance/Upper/AimRayCast/VisualRay
 
 # TODO: Enemy base class with common functions
 
@@ -22,7 +24,13 @@ func aim_to_target(delta, speed = AIM_SPEED, offset = AIM_OFFSET):
 	upper_vi.rotation = lerp_angle(upper_vi.rotation, angle, delta * speed)
 
 
+func update_visual_aim():
+	var length = aim_raycast.global_position.distance_to(aim_raycast.get_collision_point())
+	length = length * -1
+	aim_visual.polygon[2].x = length
+	aim_visual.polygon[3].x = length
+
+
 func damage():
 	# TODO: death animation
 	queue_free()
-
