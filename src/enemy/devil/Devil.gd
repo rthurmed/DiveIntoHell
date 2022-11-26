@@ -14,7 +14,6 @@ onready var upper_vi = $VisualInstance/Upper
 onready var animation = $AnimationPlayer
 
 # TODO: Enemy base class with common functions
-# TODO: sprite that looks more 'topdown-ish'
 
 
 func aim_to_target(delta, speed = AIM_SPEED, offset = AIM_OFFSET):
@@ -24,10 +23,6 @@ func aim_to_target(delta, speed = AIM_SPEED, offset = AIM_OFFSET):
 
 
 func damage():
-	# TODO
-	print_debug('NOT IMPLEMENTED YET')
-	pass
+	# TODO: death animation
+	queue_free()
 
-
-func _on_StateMachine_transition(state_name):
-	print(name, ' transitions to state[', state_name, ']')

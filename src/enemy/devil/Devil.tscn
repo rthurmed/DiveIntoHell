@@ -132,7 +132,6 @@ one_shot = true
 anims/RESET = SubResource( 2 )
 anims/prepare = SubResource( 1 )
 
-[connection signal="transition" from="StateMachine" to="." method="_on_StateMachine_transition"]
 [connection signal="timeout" from="StateMachine/Aim/Timer" to="StateMachine/Aim" method="_on_Timer_timeout"]
 [connection signal="timeout" from="StateMachine/Wait/Timer" to="StateMachine/Wait" method="_on_Timer_timeout"]
 [connection signal="animation_finished" from="AnimationPlayer" to="StateMachine/Prepare" method="_on_AnimationPlayer_animation_finished"]
