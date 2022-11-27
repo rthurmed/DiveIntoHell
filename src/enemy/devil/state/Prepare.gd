@@ -2,7 +2,7 @@ extends State
 
 
 const ANIMATION_NAME = 'prepare'
-const ANIMATION_CUSTOM_SPEED = .5
+const ANIMATION_CUSTOM_SPEED = .4
 
 export var custom_aim_speed = 10
 
