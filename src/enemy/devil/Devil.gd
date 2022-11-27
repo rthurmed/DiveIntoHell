@@ -18,6 +18,8 @@ onready var state_machine = $StateMachine
 
 # warning-ignore:unused_signal
 signal shoot
+# warning-ignore:unused_signal
+signal death
 
 # TODO: Enemy base class with common functions
 

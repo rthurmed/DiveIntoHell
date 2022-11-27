@@ -8,9 +8,13 @@ const LIFE_DEFAULT_DAMAGE = 1
 export var life_max = 4
 
 onready var state_machine = $StateMachine
+onready var animation = $AnimationPlayer
 
 var movement = Vector2.ZERO
 var life = life_max
+
+# warning-ignore:unused_signal
+signal death
 
 
 func capture_movement_input():

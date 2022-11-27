@@ -5,7 +5,6 @@ export var life_indicator: PackedScene
 
 onready var container_life = $"%ContainerLife"
 onready var sound_hit = $"../../Sound/Hit"
-onready var sound_death = $"../../Sound/Death"
 
 func _ready():
 	# create UI
@@ -25,7 +24,6 @@ func enter():
 		container_life.get_child(child_idx).set_value(active)
 	
 	if owner.life <= 0:
-		sound_death.play()
 		transition('Death')
 		return
 	
