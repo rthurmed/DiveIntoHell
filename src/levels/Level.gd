@@ -21,6 +21,11 @@ func _ready():
 	player.connect('death', self, '_on_Player_death')
 
 
+func _process(_delta):
+	if Input.is_action_just_released("cheat_next_level"):
+		go_to_next()
+
+
 func open_exit_door():
 	door_exit.set_opened(true)
 
