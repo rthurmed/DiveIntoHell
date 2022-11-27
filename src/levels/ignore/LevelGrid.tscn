@@ -51,6 +51,18 @@ path_target = NodePath("../Player")
 position = Vector2( 18, 226 )
 path_target = NodePath("../Player")
 
+[node name="Devil4" parent="Level" instance=ExtResource( 3 )]
+position = Vector2( 140, 347 )
+path_target = NodePath("../Player")
+
+[node name="Devil5" parent="Level" instance=ExtResource( 3 )]
+position = Vector2( 217, 347 )
+path_target = NodePath("../Player")
+
+[node name="Devil6" parent="Level" instance=ExtResource( 3 )]
+position = Vector2( 19, 306 )
+path_target = NodePath("../Player")
+
 [node name="Portal1" parent="Level" instance=ExtResource( 5 )]
 position = Vector2( 97, 308 )
 path_exit_portal = NodePath("../Portal2")
