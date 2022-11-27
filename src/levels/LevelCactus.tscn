@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/room_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/enemy/devil/Devil.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/world/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/levels/Level.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/levels/LevelSubmarine.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/decoration.png" type="Texture" id=7]
 
 [node name="Level1" type="Node2D"]
 
@@ -21,6 +22,22 @@ position = Vector2( 11, 32 )
 [node name="DoorExit" parent="." instance=ExtResource( 4 )]
 position = Vector2( 110, 224 )
 rotation = -3.14159
+
+[node name="Decoration" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Decoration"]
+position = Vector2( 33, 24 )
+texture = ExtResource( 7 )
+hframes = 7
+vframes = 7
+frame = 3
+
+[node name="Sprite2" type="Sprite" parent="Decoration"]
+position = Vector2( 168, -8 )
+texture = ExtResource( 7 )
+hframes = 7
+vframes = 7
+frame = 5
 
 [node name="Level" parent="." instance=ExtResource( 5 )]
 next_scene = ExtResource( 6 )

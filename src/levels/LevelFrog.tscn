@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/room_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/levels/Level.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/world/Portal.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/world/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/levels/LevelTurtle.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/decoration.png" type="Texture" id=8]
 
 [node name="LevelFrog" type="Node2D"]
 
@@ -23,6 +24,24 @@ rotation = -3.14159
 [node name="DoorExit" parent="." instance=ExtResource( 6 )]
 position = Vector2( 232, 192 )
 rotation = 3.14159
+
+[node name="Decoration" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Decoration"]
+position = Vector2( 21, 72 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 8 )
+hframes = 7
+vframes = 7
+frame = 18
+
+[node name="Sprite2" type="Sprite" parent="Decoration"]
+position = Vector2( 264, 172 )
+rotation = 1.5708
+texture = ExtResource( 8 )
+hframes = 7
+vframes = 7
+frame = 5
 
 [node name="Level" parent="." instance=ExtResource( 2 )]
 next_scene = ExtResource( 7 )
