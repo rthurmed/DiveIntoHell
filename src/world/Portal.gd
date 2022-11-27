@@ -1,12 +1,20 @@
 extends Area2D
 
 
+enum PortalColor {RED = 0, BLUE = 1, YELLOW = 2}
+
 export var path_exit_portal: NodePath
+export (PortalColor) var color = PortalColor.RED
 
 onready var exit_portal = get_node(path_exit_portal)
 onready var sound_teleport = $Sound/Teleport
+onready var sprite = $Sprite
 
 var ignored_names = {}
+
+
+func _ready():
+	sprite.frame = color
 
 
 func _on_Portal_body_entered(body):
