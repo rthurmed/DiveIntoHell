@@ -10,6 +10,8 @@ export var life_max = 4
 onready var state_machine = $StateMachine
 onready var animation = $AnimationPlayer
 
+export var invincible = false
+
 var movement = Vector2.ZERO
 var life = life_max
 
@@ -26,11 +28,21 @@ func capture_movement_input():
 	return movement_input
 
 
+func has_any_movement_input():
+	return (
+		Input.is_action_pressed("player_right") or
+		Input.is_action_pressed("player_left") or
+		Input.is_action_pressed("player_down") or
+		Input.is_action_pressed("player_up")
+	)
+
+
 func apply_movement(delta, movement_input, speed = MOVEMENT_SPEED, accel = MOVEMENT_ACCEL):
 	movement = lerp(movement, movement_input, delta * accel)
 	var _slide = move_and_slide(movement * speed)
 
 
 func damage():
+	if invincible: return
 	life -= LIFE_DEFAULT_DAMAGE
 	state_machine.transition('SufferHit')
