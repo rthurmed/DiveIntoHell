@@ -25,4 +25,5 @@ func enter():
 
 func _on_Timer_timeout():
 	if not active(): return
-	transition('Shoot')
+	# FIXME: is this a good feature?
+	# transition('Shoot')

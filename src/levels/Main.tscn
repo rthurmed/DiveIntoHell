@@ -28,6 +28,15 @@ path_player = NodePath("Player")
 [node name="Player" parent="Level" instance=ExtResource( 4 )]
 position = Vector2( 65, 50 )
 
+[node name="Camera2D" type="Camera2D" parent="Level/Player"]
+current = true
+limit_left = -16
+limit_top = -16
+limit_right = 272
+limit_bottom = 240
+smoothing_enabled = true
+editor_draw_limits = true
+
 [node name="Devil1" parent="Level" instance=ExtResource( 5 )]
 position = Vector2( 147, 74 )
 path_target = NodePath("../Player")
