@@ -39,6 +39,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Pause="*res://modules/Pause/Pause.tscn"
+Util="*res://src/Util.gd"
 
 [display]
 

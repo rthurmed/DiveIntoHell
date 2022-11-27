@@ -7,6 +7,8 @@ const MOVEMENT_ACCEL = 10
 
 export var speed = 400
 
+onready var dash_recovery_timer: Timer = $"%DashRecoveryTimer"
+
 var direction = Vector2.ZERO
 
 
@@ -21,6 +23,7 @@ func enter():
 
 func exit():
 	owner.movement = Vector2.ZERO
+	dash_recovery_timer.start()
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
