@@ -39,6 +39,7 @@ path_player = NodePath("Player")
 
 [node name="Player" parent="Level" instance=ExtResource( 5 )]
 position = Vector2( 66, 64 )
+objective = "Dodge the arrow to kill"
 
 [node name="Camera2D" type="Camera2D" parent="Level/Player"]
 current = true
