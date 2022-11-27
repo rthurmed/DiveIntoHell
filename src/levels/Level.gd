@@ -30,6 +30,10 @@ func go_to_next():
 	var _ok = get_tree().change_scene_to(next_scene)
 
 
+func reset_scene():
+	var _ok = get_tree().reload_current_scene()
+
+
 func _on_Enemy_death():
 	remaining_enemies -= 1
 	if remaining_enemies <= 0:
