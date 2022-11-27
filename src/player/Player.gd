@@ -5,7 +5,7 @@ const MOVEMENT_SPEED = 140
 const MOVEMENT_ACCEL = 7 # the lower the more slippery
 const LIFE_DEFAULT_DAMAGE = 1
 
-export var life_max = 4
+export var life_max = 3
 
 onready var state_machine = $StateMachine
 onready var animation = $AnimationPlayer
