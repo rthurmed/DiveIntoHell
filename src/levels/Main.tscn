@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/room_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/world/Door.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/levels/Level.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/enemy/devil/Devil.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/world/Portal.tscn" type="PackedScene" id=6]
 
 [node name="Main" type="Node2D"]
 
@@ -44,3 +45,11 @@ path_target = NodePath("../Player")
 [node name="Devil2" parent="Level" instance=ExtResource( 5 )]
 position = Vector2( 95, 206 )
 path_target = NodePath("../Player")
+
+[node name="PortalRed1" parent="Level" instance=ExtResource( 6 )]
+position = Vector2( 138, 99 )
+path_exit_portal = NodePath("../PortalRed2")
+
+[node name="PortalRed2" parent="Level" instance=ExtResource( 6 )]
+position = Vector2( 227, 213 )
+path_exit_portal = NodePath("../PortalRed1")
