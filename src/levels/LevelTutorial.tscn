@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/room_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/levels/Level.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/levels/LevelColumn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/levels/LevelDiagonalIntro.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/enemy/devil/Devil.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/player/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/world/Door.tscn" type="PackedScene" id=6]
@@ -31,6 +31,7 @@ path_player = NodePath("Player")
 position = Vector2( 66, 64 )
 
 [node name="Camera2D" type="Camera2D" parent="Level/Player"]
+current = true
 limit_left = -16
 limit_top = -16
 limit_right = 272

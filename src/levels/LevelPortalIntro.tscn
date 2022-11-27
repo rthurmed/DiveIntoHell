@@ -32,6 +32,7 @@ path_player = NodePath("Player")
 position = Vector2( 61, 46 )
 
 [node name="Camera2D" type="Camera2D" parent="Level/Player"]
+current = true
 limit_left = -16
 limit_top = -32
 limit_right = 272
