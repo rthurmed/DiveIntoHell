@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="DiveIntoHell"
-run/main_scene="res://src/levels/Main.tscn"
+run/main_scene="res://src/levels/LevelTutorial.tscn"
 config/icon="res://icon.png"
 
 [autoload]
