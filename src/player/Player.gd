@@ -10,8 +10,6 @@ export var life_max = 4
 onready var state_machine = $StateMachine
 onready var animation = $AnimationPlayer
 
-export var invincible = false
-
 var movement = Vector2.ZERO
 var life = life_max
 
@@ -43,6 +41,5 @@ func apply_movement(delta, movement_input, speed = MOVEMENT_SPEED, accel = MOVEM
 
 
 func damage():
-	if invincible: return
 	life -= LIFE_DEFAULT_DAMAGE
 	state_machine.transition('SufferHit')

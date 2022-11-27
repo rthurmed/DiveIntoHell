@@ -17,11 +17,9 @@ func process(delta: float):
 func enter():
 	direction = owner.capture_movement_input()
 	owner.animation.play(ANIMATION_NAME, -1, ANIMATION_SPEED)
-	owner.invincible = true
 
 
 func exit():
-	owner.invincible = false
 	owner.movement = Vector2.ZERO
 
 
