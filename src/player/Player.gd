@@ -6,15 +6,21 @@ const MOVEMENT_ACCEL = 7 # the lower the more slippery
 const LIFE_DEFAULT_DAMAGE = 1
 
 export var life_max = 3
+export var objective = 'Kill all enemies'
 
 onready var state_machine = $StateMachine
 onready var animation = $AnimationPlayer
+onready var objective_label = $CanvasLayer/UI/ObjectiveLabel
 
 var movement = Vector2.ZERO
 var life = life_max
 
 # warning-ignore:unused_signal
 signal death
+
+
+func _ready():
+	objective_label.text = objective
 
 
 func capture_movement_input():
