@@ -4,6 +4,8 @@
 
 This game was created for [Mini Jam 120: Hell²](https://itch.io/jam/mini-jam-120-hell)
 
+This is an open source project. The source code is available at https://github.com/rthurmed/OMGDemons.
+
 ## Instructions
 
 You are an angel trapped in hell. You don't have any means to attack the demons. To kill then you must dodge their arrows.
