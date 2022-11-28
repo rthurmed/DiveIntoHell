@@ -21,6 +21,8 @@ Sound effects by [Little Robot Sound Factory](www.littlerobotsoundfactory.com):
 - Fantasy Sound Effects Library: https://opengameart.org/content/fantasy-sound-effects-library
 - Horror Sound Effects Library: https://opengameart.org/content/horror-sound-effects-library
 
+Font 'Piacevoli' by [jeti](https://fontenddev.com/). Source: [https://www.dafont.com/pt/piacevoli.font](https://www.dafont.com/pt/piacevoli.font). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 Programming, art and everything by [@rthurmed](https://rthurmed.itch.io/).
 
 This project was made with Godot Game Engine (v3.5.1).
